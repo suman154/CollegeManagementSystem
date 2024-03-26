@@ -1,0 +1,133 @@
+# College Management System
+
+    * Session Year Model
+            - id 
+            - Session_start_year
+            - Session_end_year
+            - objects
+
+
+    *  Custom User(Abstract User)
+            - HOD 
+            - Staff
+            - Student
+
+
+    * Admin HOD
+            - id
+            -  Admin
+            - created_at
+            -  updated_at
+            - objects
+
+
+
+    * Staff
+        - id 
+        -  admin
+        -  adddress
+        - created_at
+        -  updated_at
+        -  objects
+
+
+    * Courses 
+        -  id 
+        -  Courses_name
+        - created_at
+        - updated_at
+        - objects
+
+
+
+    * Subjects
+        - id 
+        - Subject_name
+        - course_id
+        - created_at
+        - updated_at
+        - objects
+
+
+    * Students
+        - id 
+        - admin
+        - gender
+        - profile_pic
+        -  adddress
+        - course_id
+        -  session_year_id
+        -  created_at
+        -  updated_at
+        -  objects
+
+
+    * Attendance
+        - id
+        - Subject_id
+        -  attendance_date
+        - session_year_id
+        - created_at
+        - updated_at
+        - objects
+
+
+    * Attendance Report
+        - id 
+        - student_id
+        - status
+        - created_at
+        - updated_at
+        - objects
+
+
+    * Leave Report Student
+        - id 
+        - student_id
+        - leave_date
+        - leave_message
+        - leave_status
+        - created_at
+        - updated_at
+        - objects
+
+
+    * FeedBack Staffs
+        - id
+        - staff_id
+        - feedback
+        - feedack_reply
+        - created_at
+        - updated_at
+        - objects
+
+
+    * Notification Student
+            - id 
+            - student_id
+            - message
+            - created_at
+            - updated_at
+            - objects
+
+
+    * Notification Staffs
+            - id 
+            - staff_id
+            - message
+            - created_at
+            - updated_at
+            - objects
+
+    
+
+    * Student Result 
+            - id
+            - student_id
+            - subject_id
+            - subject_exam_marks
+            -  subject_assignment_masrks
+            - created_at
+            - updated_at
+            - objects
+
