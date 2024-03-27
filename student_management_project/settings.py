@@ -25,6 +25,16 @@ SECRET_KEY = 'django-insecure-h!#k*8dhu(0jqf=kka30&wpyoj=zx*hffm4)d%mf#)t3zr4)ei
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Static files (CSS, JavaScript, images)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+# Media files (user-uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 ALLOWED_HOSTS = []
 
 
@@ -38,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'student_management_app',
+    # 'django.contrib.staticfiles',
     
 ]
 

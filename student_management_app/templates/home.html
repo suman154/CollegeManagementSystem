@@ -1,0 +1,87 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block title %}Home{% endblock title %} 
+  
+{% block content %} 
+<html> 
+<head> 
+<link rel="icon" type="img/x-icon" href="{% static 'logo.jpeg' %}">
+<style> 
+img { 
+  background-size: cover; 
+} 
+body {background-color: coral;} 
+  
+</style> 
+
+  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> 
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+  
+</head> 
+  
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+    <a class="navbar-brand" href=""><h3>WELCOME TO College Management System</h3></a> 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+    <span class="navbar-toggler-icon"></span> 
+  </button> 
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+    <ul class="navbar-nav mr-auto"> 
+    </ul> 
+    <form class="form-inline my-2 my-lg-0"> 
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+  <a href="/login" class="btn btn-outline-success my-1 mx-2">Login</a> 
+  
+       <!--<input class="form-control mr-sm-2" type="Register" placeholder="Register" aria-label="Register">-->
+     <a href="/registration" class="btn btn-outline-success my-1 mx-2">Register</a> 
+        <a href="/contact" class="btn btn-outline-danger my-1 mx-2">Contact Us</a> 
+    </form> 
+  </div> 
+</nav> 
+  
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"> 
+  <ol class="carousel-indicators"> 
+  
+  </ol> 
+  <div class="carousel-inner"> 
+    <div class="carousel-item active"> 
+      <!-- {% comment %} <img class="d-block w-100" src="https://thehimalayantimes.com/uploads/imported_images/wp-content/uploads/2015/08/tribhuvan-university.jpg" alt="First slide"> {% endcomment %}  -->
+      <img src="{% static 'dist/img/1.jpg' %}" class="d-block w-100 h-100 size-cover" alt="..."> 
+    </div> 
+          <div class="carousel-item"> 
+      {% comment %} <img class="d-block w-100" src="https://cdcsit.edu.np/wp-content/uploads/2019/08/IMG_20190623_152121.jpg" alt="Second slide"> {% endcomment %} 
+      <img src="{% static 'dist/img/2.jpeg' %}" class="d-block w-100 h-100 size-cover " alt="..."> 
+    </div> 
+          <div class="carousel-item"> 
+      {% comment %} <img class="d-block w-100" src="https://www.tutelagestudy.com/uploads/university/IMG_20221216_124603.jpg" alt="Second slide"> {% endcomment %} 
+      <img src="{% static 'dist/img/3.jpg' %}" class="d-block w-100 h-100 size-cover " alt="..."> 
+    </div> 
+    <div class="carousel-item"> 
+      {% comment %} <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdm9s9DchgbvPbt22mKl8tSGX2HqC0InZAxD56DqNGrQ&s" alt="Second slide"> {% endcomment %} 
+      <img src="{% static 'dist/img/4.jpeg' %}" class="d-block w-100 h-100 size-cover " alt="..."> 
+    </div> 
+    <div class="carousel-item"> 
+      {% comment %} <img class="d-block w-100" src="https://myrepublica.nagariknetwork.com/uploads/media/1641261744_tupic-1200x560_20220115145522.jpg" alt="Third slide"> {% endcomment %} 
+      <img src="{% static 'dist/img/5.jpg' %}" class="d-block w-100 h-100 size-cover" alt="..."> 
+    </div> 
+  </div> 
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> 
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
+    <span class="sr-only">Previous</span> 
+  </a> 
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> 
+    <span class="carousel-control-next-icon" aria-hidden="true"></span> 
+    <span class="sr-only">Next</span> 
+  </a> 
+</div> 
+  
+</html> 
+  
+{% endblock content %}
